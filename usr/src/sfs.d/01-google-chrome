@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+. /opt/LiveBootUtils/scripts/common.func
+
+deb=$(dl_file https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
+
+dpkg-deb -x "$deb" "$DESTDIR"
+find "$DESTDIR" -type d -perm 700 -exec chmod 755 {} +
