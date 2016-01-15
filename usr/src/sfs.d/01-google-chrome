@@ -2,8 +2,9 @@
 
 set -e
 . /opt/LiveBootUtils/scripts/common.func
+. "$(dirname "$0")/.common.sh"
 
-deb=$(dl_file https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
+deb=$(dl_file $(latest_url))
 
 dpkg-deb -x "$deb" "$DESTDIR"
 find "$DESTDIR" -type d -perm 700 -exec chmod 755 {} +
