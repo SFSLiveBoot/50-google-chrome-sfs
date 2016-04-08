@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -e
-. /opt/LiveBootUtils/scripts/common.func
 . "$(dirname "$0")/.common.sh"
 
 deb=$(dl_file $(latest_url))
