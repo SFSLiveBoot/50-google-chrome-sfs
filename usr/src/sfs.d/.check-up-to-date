@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+. "$(dirname "$0")/.common.sh"
+
+test "x$(current_version)" = "x$(latest_version | cut -f1 -d-)"
