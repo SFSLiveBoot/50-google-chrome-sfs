@@ -1,4 +1,8 @@
 {
   "BrowserSignin": 0,
-  "SyncDisabled": true
+  "SyncDisabled": true,
+  "PrivacySandboxAdMeasurementEnabled": false,
+  "PrivacySandboxAdTopicsEnabled": false,
+  "PrivacySandboxSiteEnabledAdsEnabled": false
+
 }
